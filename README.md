@@ -2,16 +2,22 @@
 
   [腾讯云学生计划]:( https://cloud.tencent.com/act/campus)
 
-- 安装Git并注册
+  ![](F:\cloudcomput\tup\QQ图片20191008212101.png)
+
+  安装Git并注册
 
   [Git]: ( https://git-scm.com/downloads)
+
+  
 
 - 下载PuTTY端实现远程登录云服务器（老师给的教程使用XShell,但是这个免费,性质似乎都一样）
 
   [PuTTY]: ( https://www.putty.org/)
 
-  根据腾讯云公网IP地址远程登录
+  ![](F:\cloudcomput\tup\QQ图片20191008213053.png)
 
+  根据腾讯云公网IP地址远程登录
+  
   
 
 ## SSH key
@@ -32,7 +38,7 @@
 
 - ##### 测试SSH Key是否配置成功
 
-  
+  ![](F:\cloudcomput\tup\QQ图片20191008164939.png)
 
   此时配置成功
 
@@ -46,7 +52,7 @@
 
 - ##### 创建本地代码仓库
 
-  
+  ![](F:\cloudcomput\tup\QQ图片20191008170611.png)
 
 新建一个文件夹用于存放代码，右键单击bash here。
 
@@ -68,6 +74,8 @@
 
 提交指令
 
+![](F:\cloudcomput\tup\QQ图片20191008170548.png)
+
 - ##### 上传成功
 
   在代码仓查看到刚刚修改的文件
@@ -82,7 +90,17 @@
 
 - ##### 创建新的虚拟机
 
+  ![](F:\cloudcomput\tup\QQ图片20191008213043.png)
   
+  ![QQ图片20191008213039](F:\cloudcomput\tup\QQ图片20191008213039.jpg)
+  
+  ![QQ图片20191008213001](F:\cloudcomput\tup\QQ图片20191008213001.jpg)
+  
+  ![QQ图片20191008212937](F:\cloudcomput\tup\QQ图片20191008212937.jpg)
+  
+  ![QQ图片20191008212930](F:\cloudcomput\tup\QQ图片20191008212930.png)
+  
+  ![QQ图片20191008212926](F:\cloudcomput\tup\QQ图片20191008212926.png)
 
 语言设置为英语，安装桌面GUI，并设置开启网络，其他选项自行选择。
 
@@ -95,7 +113,3 @@
 - ##### 成功登录
 
 
-
-赶紧检查一下网络，可以登录
-
-到此结束！！！
