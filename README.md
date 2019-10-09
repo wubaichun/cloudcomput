@@ -2,7 +2,7 @@
 
   [腾讯云学生计划]:( https://cloud.tencent.com/act/campus)
 
-  ![](/cloudcomput/tup/QQ图片20191008212101.png)
+  ![](/tup/QQ图片20191008212101.png)
 
   安装Git并注册
 
