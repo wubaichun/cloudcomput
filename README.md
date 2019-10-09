@@ -14,7 +14,7 @@
 
   [PuTTY]: ( https://www.putty.org/)
 
-  ![](F:\cloudcomput\tup\QQ图片20191008213053.png)
+  ![](/tup/QQ图片20191008213053.png)
 
   根据腾讯云公网IP地址远程登录
   
@@ -38,7 +38,7 @@
 
 - ##### 测试SSH Key是否配置成功
 
-  ![](F:\cloudcomput\tup\QQ图片20191008164939.png)
+  ![](/tup/QQ图片20191008164939.png)
 
   此时配置成功
 
@@ -52,7 +52,7 @@
 
 - ##### 创建本地代码仓库
 
-  ![](F:\cloudcomput\tup\QQ图片20191008170611.png)
+  ![](\tup\QQ图片20191008170611.png)
 
 新建一个文件夹用于存放代码，右键单击bash here。
 
