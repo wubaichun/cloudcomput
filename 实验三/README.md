@@ -6,7 +6,7 @@
 sudo yum check-update
 ```
 
-![](新建文件夹 (5)\1.png)
+![](新建文件夹 (5)/1.png)
 
 ***添加Docker官方仓库，安装最新Docker\***
 
