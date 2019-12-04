@@ -6,7 +6,7 @@
 sudo yum check-update
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\1.png)
+![](新建文件夹 (5)\1.png)
 
 ***添加Docker官方仓库，安装最新Docker\***
 
@@ -14,11 +14,11 @@ sudo yum check-update
 curl -fsSL https://get.docker.com/ | sh
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\2.png)
+![](新建文件夹 (5)\2.png)
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\3.png)
+![](新建文件夹 (5)\3.png)
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\4.png)
+![](新建文件夹 (5)\4.png)
 
 ***启动Docker\***
 
@@ -32,7 +32,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\5.png)
+![](新建文件夹 (5)\5.png)
 
 ***查看Docker 版本信息\***
 
@@ -54,7 +54,7 @@ docker pull centos:7
 docker images
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\6.png)
+![](新建文件夹 (5)\6.png)
 
 
 
@@ -70,7 +70,7 @@ docker run -d -it --privileged --name wordpress -p 8888:80 -d centos:7 /usr/sbin
 docker ps
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\7.png)
+![](新建文件夹 (5)\7.png)
 
 ***进入容器前台
 
@@ -78,7 +78,7 @@ docker ps
 docker exec -it 2d5 /bin/bash
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\8.png)
+![](新建文件夹 (5)\8.png)
 
 ### 3.容器中安装wordpress
 
@@ -90,7 +90,7 @@ docker exec -it 2d5 /bin/bash
 yum install httpd
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\9.png)
+![](新建文件夹 (5)\9.png)
 
 ```
 systemctl start httpd.service
@@ -102,11 +102,11 @@ systemctl start httpd.service
 systemctl enable httpd.service
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\10.png)
+![](新建文件夹 (5)\10.png)
 
 访问服务器公网IP,出现下图代表Apache安装成功
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\11.png)
+![](新建文件夹 (5)\11.png)
 
 #### 2.安装MySQL
 
@@ -116,7 +116,7 @@ systemctl enable httpd.service
 yum install mariadb-server mariadb
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\12.png)
+![](新建文件夹 (5)\12.png)
 
 ***启动MariaDB\***
 
@@ -130,7 +130,7 @@ systemctl start mariadb
 mysql_secure_installation
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\13.png)
+![](新建文件夹 (5)\13.png)
 
 初始密码为空，提示输入正确密码，直接回车，再设置密码，其他选择Y
 
@@ -142,7 +142,7 @@ mysql_secure_installation
 systemctl enable mariadb.service
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\14.png)
+![](新建文件夹 (5)\14.png)
 
 #### 3.安装PHP
 
@@ -151,9 +151,9 @@ yum install epel-release yum-utils
 yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\16.png)
+![](新建文件夹 (5)\16.png)
 
-![15](F:\cloudcomput\实验三\新建文件夹 (5)\15.png)
+![15](新建文件夹 (5)\15.png)
 
 
 
@@ -163,7 +163,7 @@ yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum-config-manager --enable remi-php72
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\17.png)
+![](新建文件夹 (5)\17.png)
 
 ***安装PHP以及php-mysql\***
 
@@ -171,7 +171,7 @@ yum-config-manager --enable remi-php72
 yum install php php-mysql
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\18.png)
+![](新建文件夹 (5)\18.png)
 
 ***查看安装的php版本\***
 
@@ -179,7 +179,7 @@ yum install php php-mysql
 php -v
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\19.png)
+![](新建文件夹 (5)\19.png)
 
 ***重启Apache服务器以支持PHP\***
 
@@ -193,7 +193,7 @@ systemctl restart httpd.service
 yum install php-fpm php-gd
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\20.png)
+![](新建文件夹 (5)\20.png)
 
 ***重启Apache服务\***
 
@@ -201,7 +201,7 @@ yum install php-fpm php-gd
 service httpd restart
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\21.png)
+![](新建文件夹 (5)\21.png)
 
 #### 4.安装WordPress以及完成相关配置
 
@@ -223,7 +223,7 @@ CREATE DATABASE 数据库名 ;
 use 数据库名 ;
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\22.png)
+![](新建文件夹 (5)\22.png)
 
 ***为WordPress创建一个独立的MySQL用户并授权给数据库访问权限\***
 
@@ -232,9 +232,9 @@ CREATE USER 用户名@localhost IDENTIFIED BY '密码';
 GRANT ALL PRIVILEGES ON 数据库名.* TO 用户名@localhost IDENTIFIED BY '密码';
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\23.png)
+![](新建文件夹 (5)\23.png)
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\24.png)
+![](新建文件夹 (5)\24.png)
 
 ***刷新MySQL的权限\***
 
@@ -242,7 +242,7 @@ GRANT ALL PRIVILEGES ON 数据库名.* TO 用户名@localhost IDENTIFIED BY '密
 FLUSH PRIVILEGES;
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\25.png)
+![](新建文件夹 (5)\25.png)
 
 ***安装WordPress\***
 
@@ -250,19 +250,19 @@ FLUSH PRIVILEGES;
 tar xzvf latest.tar.gz
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\26.png)
+![](新建文件夹 (5)\26.png)
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\27.png)
+![](新建文件夹 (5)\27.png)
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\28.png)
+![](新建文件夹 (5)\28.png)
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\29.png)
+![](新建文件夹 (5)\29.png)
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\30.png)
+![](新建文件夹 (5)\30.png)
 
 接下来访问你的服务器公网IP，就能进入WordPress安装的web页
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\31.png)
+![](新建文件夹 (5)\31.png)
 
 ![](新建文件夹 (5)\32.png)
 
@@ -284,7 +284,7 @@ docker commit -a "Docker用户名" -m "提交描述" 容器id 镜像名:tag标�
 docker login
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\34.png)
+![](新建文件夹 (5)\34.png)
 
 ***推送镜像\***
 
@@ -292,13 +292,13 @@ docker login
 docker push 镜像名:tag标签
 ```
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\35.png)
+![](新建文件夹 (5)\35.png)
 
 ***登录Docker网页查看仓库\***
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\36.png)
+![](新建文件夹 (5)\36.png)
 
-![](F:\cloudcomput\实验三\新建文件夹 (5)\37.png)
+![](新建文件夹 (5)\37.png)
 
 
 
