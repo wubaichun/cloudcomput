@@ -6,7 +6,7 @@
 sudo yum check-update
 ```
 
-![](/tupian/1.png)
+![](./tupian/1.png)
 
 ***添加Docker官方仓库，安装最新Docker\***
 
