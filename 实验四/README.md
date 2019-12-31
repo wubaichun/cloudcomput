@@ -10,7 +10,7 @@
 
  
 
-  ![](F:./photo/1.png)  
+  ![](F:./photo\1.png)  
 
  
 
