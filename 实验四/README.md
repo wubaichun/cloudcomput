@@ -52,7 +52,7 @@ yum install -y open-vm-tools
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
 ```
 
- 
+ ![](F:./photo/关闭SE.png)
 
 ### 配置主机文件
 
@@ -75,6 +75,8 @@ vim /etc/hosts
 ```
 ping -c 5 mon1
 ```
+
+![](F:./photo\ping.png)
 
 ## 第2步-配置SSH服务器
 
@@ -115,8 +117,6 @@ Host ceph-admin        Hostname ceph-admin        User cephuser Host mon1       
 ```
 chmod 644 ~/.ssh/config
 ```
-
-![](F:./photo/11.png)
 
 现在，使用ssh-copy-id命令将SSH密钥添加到所有节点。
 
